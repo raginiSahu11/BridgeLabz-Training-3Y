@@ -1,7 +1,7 @@
 class Vehicle {
     String ownerName;
     String vehicleType;
-    static double registrationFee = 5000; // class variable
+    static double registrationFee = 5000; 
 
     Vehicle(String ownerName, String vehicleType) {
         this.ownerName = ownerName;

@@ -1,7 +1,7 @@
 class Product {
-    String productName;   // instance variable
-    double price;         // instance variable
-    static int totalProducts = 0; // class variable
+    String productName;   
+    double price;         
+    static int totalProducts = 0; 
 
     Product(String productName, double price) {
         this.productName = productName;

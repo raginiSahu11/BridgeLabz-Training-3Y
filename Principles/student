@@ -1,0 +1,18 @@
+@startuml
+object student1 {
+  name = "John"
+}
+
+object subj1 {
+  subjectName = "Maths"
+  marks = 90
+}
+
+object subj2 {
+  subjectName = "Science"
+  marks = 85
+}
+
+student1 o-- subj1
+student1 o-- subj2
+@enduml

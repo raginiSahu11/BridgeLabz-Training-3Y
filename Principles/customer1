@@ -1,0 +1,20 @@
+@startuml
+object customer1 {
+  name = "Alice"
+}
+
+object product1 {
+  name = "Apples"
+  quantity = 2kg
+  price = 3
+}
+
+object product2 {
+  name = "Milk"
+  quantity = 1L
+  price = 2
+}
+
+customer1 *-- product1
+customer1 *-- product2
+@enduml

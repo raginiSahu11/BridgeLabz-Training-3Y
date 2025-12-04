@@ -1,0 +1,20 @@
+@startuml
+class Customer {
+  +customerId
+  +name
+  +requestBill()
+}
+
+class Product {
+  +productName
+  +quantity
+  +pricePerUnit
+}
+
+class BillGenerator {
+  +generateBill(customer)
+}
+
+Customer "1" *-- "many" Product : purchases
+Customer --> BillGenerator : requests
+@enduml

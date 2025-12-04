@@ -1,0 +1,8 @@
+@startuml
+actor Customer
+participant BillGenerator
+
+Customer -> BillGenerator : requestBill()
+BillGenerator -> BillGenerator : calculateTotal()
+BillGenerator --> Customer : returnTotalAmount()
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+actor Student
+participant GradeCalculator
+
+Student -> GradeCalculator : requestGrade()
+GradeCalculator -> GradeCalculator : calculateGrade()
+GradeCalculator --> Student : returnGrade()
+@enduml

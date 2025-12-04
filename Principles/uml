@@ -1,0 +1,19 @@
+@startuml
+class Student {
+  +studentId
+  +name
+  +requestGrade()
+}
+
+class Subject {
+  +subjectName
+  +marks
+}
+
+class GradeCalculator {
+  +calculateGrade(student)
+}
+
+Student "1" o-- "many" Subject : has
+Student --> GradeCalculator : requests
+@enduml
